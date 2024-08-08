@@ -1,0 +1,47 @@
+
+
+.reviewContainer{
+    @apply border w-[70%] m-auto p-8 shadow-lg rounded-xl;
+
+    .searchReview{
+        @apply border w-full mb-5 p-4 text-[18px] rounded-lg outline-none sticky top-5
+    }
+
+    .reviews{
+        @apply max-h-screen overflow-y-auto;
+
+        .reviewDiv{
+            @apply border p-5 mb-6 rounded-xl text-[20px] bg-slate-50 shadow-md relative;
+
+            .reviewText{
+                @apply mt-1
+            }
+
+            .deleteReview{
+                @apply absolute right-5 bg-red-600 text-white p-2 rounded-xl text-[20px] hover:opacity-45
+            }
+
+            .nameAndDate{
+                @apply flex items-center gap-6;
+                .readerName{
+                    @apply font-bold text-[23px];
+    
+                }
+                .dateSpan{
+                    @apply  text-[15px] text-gray-400 italic
+                }
+            }
+
+            
+        } 
+    }
+}
+.loader {
+    @apply flex flex-col justify-center items-center mt-48;
+  }
+  .noData{
+    @apply w-full lg:w-[60%] m-auto p-8 flex justify-center
+  }
+  .noData h1 {
+    @apply font-bold text-[20px]
+  }

@@ -1,0 +1,227 @@
+.container {
+  @apply lg:grid lg:grid-cols-5 gap-10;
+
+  .searchContainer {
+    @apply max-h-screen col-span-1 p-5 shadow-md border overflow-y-auto;
+
+    .addBookBtnContainer {
+      @apply flex justify-end mt-5 mb-10;
+
+      .addBookBtn {
+        @apply bg-btn w-full text-center text-white px-3 py-3 text-[17px] rounded-md hover:opacity-50 flex justify-center;
+      }
+      
+     
+    }
+
+    .searchDiv {
+      @apply p-0;
+    }
+
+    .searchDiv input {
+      @apply px-3 py-2 border outline-none text-[18px] rounded-md mb-10 w-full;
+    }
+    .selectBookByStatus select {
+      @apply px-3 py-2 border outline-none text-[18px] rounded-md mb-5 w-full;
+    }
+    .sortByDate{
+      @apply mt-5;
+
+      .newToOld{
+        @apply flex gap-2 mt-2;
+      }
+
+      .oldToNew{
+        @apply flex gap-2;
+      }
+    }
+    .pagination{
+      @apply pt-8;
+
+      .bookLimits{
+        @apply flex justify-start items-center gap-5 mt-2;
+  
+      }
+  
+      .bookLimits button{
+        @apply bg-btn text-white px-5 py-2 rounded-md hover:opacity-50
+      }
+    }
+  }
+
+  .dataDiv {
+    @apply col-span-4 p-5 shadow-md border;
+
+    .books {
+      @apply lg:grid lg:grid-cols-2 gap-10 max-h-screen overflow-y-auto;
+
+      .book {
+        @apply border mb-7 lg:grid lg:grid-cols-5 gap-5 rounded-l-2xl rounded-r-2xl shadow-lg scale-95 hover:shadow-2xl;
+
+        .imgDiv {
+          @apply p-0 col-span-2;
+
+          .img {
+            @apply object-cover h-[350px] rounded-l-2xl;
+          }
+        }
+
+        .bookDetails {
+          @apply p-5 col-span-3 relative;
+
+          .actionBtns {
+            @apply flex justify-between mt-4 mb-2;
+
+            .delete {
+              @apply bg-red-600;
+            }
+          }
+
+          .actionBtns button {
+            @apply bg-btn text-white px-3 py-2 rounded-md hover:opacity-50;
+          }
+
+          .isFree {
+            @apply absolute top-2 right-2 bg-green-600 text-white rounded-md px-3 py-[2px];
+          }
+
+          .isPaid {
+            @apply absolute top-2 right-2 bg-red-600 text-white rounded-md px-3 py-[2px];
+          }
+
+          .isPublishContainer {
+            @apply flex gap-2 text-[18px];
+          }
+
+          .title {
+            @apply text-[22px] font-bold mt-5;
+          }
+
+          .price {
+            @apply text-green-600 font-bold mt-2 text-[20px];
+          }
+
+          .description {
+            @apply mt-2 text-[16px];
+          }
+
+          .genre {
+            @apply text-[#ea580c] text-[18px] font-bold mt-3;
+          }
+
+          .tags {
+            @apply mt-3 flex gap-4 italic text-gray-400;
+          }
+
+          .readBtn {
+            @apply w-full mb-5 bg-green-700 text-white px-4 py-2 rounded-md text-[17px] mt-4 hover:opacity-50;
+          }
+
+          .author {
+            @apply text-gray-400 font-bold text-right italic underline;
+          }
+        }
+      }
+    }
+  }
+
+  .formContainer {
+    @apply col-span-5 p-10 flex justify-center items-center;
+    .updateFormContainer {
+      @apply p-0 w-[600px] shadow-lg flex justify-center;
+
+      .updateForm {
+        @apply border shadow-md w-full p-8 bg-slate-50 rounded-xl relative;
+
+        .updateCross {
+          @apply bg-red-600 text-white font-bold text-[30px] p-1 rounded-lg absolute top-8 right-8 cursor-pointer hover:opacity-50;
+        }
+
+        .heading {
+          @apply font-bold text-[25px] text-center mt-3 my-8;
+        }
+
+        .updateBtn {
+          @apply bg-btn text-white cursor-pointer hover:opacity-50;
+        }
+        .spinner {
+          @apply bg-btn p-5 text-white flex justify-center items-center text-[20px];
+        }
+      }
+
+      .updateForm input {
+        @apply w-full mb-5 px-3 py-4 text-[18px] outline-none border;
+      }
+    }
+
+    .addFormContainer {
+      @apply p-0 w-[600px] shadow-lg flex justify-center;
+
+      .addForm {
+        @apply border shadow-md w-full p-8 bg-slate-50 rounded-xl relative;
+
+        .addCross {
+          @apply bg-red-600 text-white font-bold text-[30px] p-1 rounded-lg absolute top-8 right-8 cursor-pointer hover:opacity-50;
+        }
+
+        .heading {
+          @apply font-bold text-[25px] text-center mt-3 my-8;
+        }
+
+        .addBtn {
+          @apply bg-btn text-white cursor-pointer hover:opacity-50;
+        }
+        .spinner {
+          @apply bg-btn p-5 text-white flex justify-center items-center text-[20px];
+        }
+      }
+
+      .addForm input {
+        @apply w-full mb-5 px-3 py-4 text-[18px] outline-none border;
+      }
+    }
+  }
+
+  .label {
+    @apply font-bold text-[15px];
+  }
+}
+.loader {
+  @apply flex flex-col justify-center items-center mt-48;
+}
+.noBook{
+  @apply border w-[50%] shadow-lg m-auto p-5 flex flex-col items-center;
+
+  .addBookBtn {
+    @apply bg-btn text-center my-8 text-white px-3 py-3 text-[17px] rounded-md hover:opacity-50 flex justify-center;
+  }
+  .heading{
+    @apply font-bold text-[18px]
+  }
+  .addFormContainer {
+    @apply p-0 w-[600px] shadow-lg flex justify-center;
+
+    .addForm {
+      @apply border shadow-md w-full p-8 bg-slate-50 rounded-xl relative;
+
+      .addCross {
+        @apply bg-red-600 text-white font-bold text-[30px] p-1 rounded-lg absolute top-8 right-8 cursor-pointer hover:opacity-50;
+      }
+
+      .heading {
+        @apply font-bold text-[25px] text-center mt-3 my-8;
+      }
+
+      .addBtn {
+        @apply bg-btn text-white cursor-pointer hover:opacity-50;
+      }
+      .spinner {
+        @apply bg-btn p-5 text-white flex justify-center items-center text-[20px];
+      }
+    }
+
+    .addForm input {
+      @apply w-full mb-5 px-3 py-4 text-[18px] outline-none border;
+    }
+  }
+}

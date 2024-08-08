@@ -1,0 +1,135 @@
+.container {
+  @apply p-5 lg:grid lg:grid-cols-5 gap-10;
+
+  .actionsContainer {
+    @apply p-5 border max-h-screen col-span-1 shadow-md overflow-y-auto;
+
+    .search {
+      @apply p-3 border outline-none text-[18px] w-full rounded-sm mb-8 sticky top-[-20px];
+    }
+
+    .author {
+      @apply p-0;
+
+      .selectAuthor {
+        @apply p-4 mb-8 border w-full outline-none rounded-sm mt-1;
+      }
+    }
+
+    .genre {
+      @apply p-0;
+
+      .selectGenre {
+        @apply p-4 mb-8 border w-full outline-none rounded-sm mt-1;
+      }
+    }
+
+    .filterByPriceContainer {
+      @apply mb-8;
+
+      .sort {
+        @apply p-0 mt-2;
+      }
+      .sort label {
+        @apply flex gap-2 mb-3;
+      }
+    }
+
+    .pagination {
+      @apply p-0;
+
+      .bookLimits {
+        @apply flex justify-start items-center gap-5 mt-2;
+      }
+
+      .bookLimits button {
+        @apply bg-btn text-white px-5 py-2 rounded-md hover:opacity-50;
+      }
+    }
+  }
+
+  .rightDiv {
+    @apply col-span-4 relative;
+
+    .dataContainer {
+      @apply max-h-screen overflow-y-auto pr-8 border p-5 shadow-md;
+
+      .books {
+        @apply lg:grid lg:grid-cols-2 gap-10;
+
+        .book {
+          @apply border mb-7 lg:grid lg:grid-cols-5 gap-5 rounded-l-2xl rounded-r-2xl shadow-lg scale-95 hover:shadow-2xl;
+
+          .imgDiv {
+            @apply p-0 col-span-2;
+
+            .img {
+              @apply w-full lg:w-auto object-cover h-[350px] rounded-2xl lg:rounded-l-2xl;
+            }
+          }
+
+          .bookDetails {
+            @apply p-5 col-span-3 relative;
+
+            .isFree {
+              @apply absolute top-2 right-2 bg-green-600 text-white rounded-md px-3 py-[2px];
+            }
+
+            .isPaid {
+              @apply absolute top-2 right-2 bg-red-600 text-white rounded-md px-3 py-[2px];
+            }
+
+            .title {
+              @apply text-[22px] font-bold mt-5;
+            }
+
+            .price {
+              @apply text-green-600 font-bold mt-2 text-[20px];
+            }
+
+            .description {
+              @apply mt-2 text-[16px];
+            }
+
+            .genre {
+              @apply text-[#ea580c] text-[18px] font-bold mt-3;
+            }
+
+            .tags {
+              @apply mt-3 flex gap-4 italic text-gray-400;
+            }
+
+            .readBtn {
+              @apply w-full mb-5 bg-btn text-white px-4 py-2 rounded-md text-[17px] mt-4 hover:opacity-50;
+            }
+
+            .author {
+              @apply text-gray-400 font-bold text-right italic underline;
+            }
+          }
+        }
+      }
+    }
+
+    .paginationContainer {
+      @apply bg-white px-5 py-8 text-[20px] border shadow-lg mt-10 flex gap-5 justify-center items-center;
+    }
+  }
+}
+
+.label {
+  @apply font-bold text-[16px];
+}
+.noPaid {
+  @apply rounded-md border border-red-700 p-5 shadow-2xl w-[600px] text-[20px] bg-white absolute right-[300px] top-[300px];
+
+  .crossDiv {
+    @apply flex justify-end mb-5;
+    .cross {
+      @apply bg-red-600 text-white p-1 text-[30px] rounded-xl;
+    }
+  }
+}
+.loader {
+  @apply flex flex-col justify-center items-center mt-48;
+}

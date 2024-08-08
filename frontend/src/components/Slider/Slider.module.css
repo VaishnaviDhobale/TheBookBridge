@@ -1,0 +1,12 @@
+
+.container{
+    @apply border p-5 shadow-md mt-1;
+
+    .value{
+        @apply text-[20px] bg-slate-200 w-[60px] m-auto text-center mb-5 rounded-lg
+    }
+
+    .sliderContainer{
+        @apply flex justify-center items-center gap-5
+    }
+}

@@ -1,0 +1,62 @@
+.container {
+  @apply p-5 text-[20px] mb-[20px] sticky top-0 shadow-md bg-white z-10;
+
+  .responsiveNavContainer {
+    @apply p-0;
+
+    .threeLinesConatiner {
+      @apply md:hidden text-[50px] sticky top-5;
+
+      .threeLines {
+        @apply bg-[#172554] text-white;
+      }
+    }
+
+    .responsiveNav {
+      @apply border mt-5 p-8 shadow-md rounded-b-3xl rounded-r-3xl bg-slate-100 absolute top-20 w-[90%];
+
+      .responsiveButtons {
+        @apply flex flex-col justify-between gap-5 mt-5;
+
+        .authorLoginBtn {
+          @apply bg-[#e11d48] text-white px-3 py-2 rounded-lg font-bold cursor-pointer hover:opacity-50;
+        }
+
+        .readerLoginBtn {
+          @apply bg-[#7c3aed] text-white px-3 py-2 rounded-lg font-bold cursor-pointer hover:opacity-50;
+        }
+      }
+    }
+  }
+
+  .navContainer {
+    @apply hidden md:flex md:justify-between md:items-center;
+
+    .links {
+      @apply p-0;
+
+      .bookImg {
+        @apply w-[60px] h-[60px] cursor-pointer hover:scale-90;
+      }
+    }
+
+    .buttons {
+      @apply flex justify-between gap-5 relative;
+
+      .authorLoginBtn {
+        @apply bg-[#e11d48] text-white px-3 py-2 rounded-lg font-bold cursor-pointer hover:opacity-50;
+      }
+
+      .readerLoginBtn {
+        @apply bg-[#7c3aed] text-white px-3 py-2 rounded-lg font-bold cursor-pointer hover:opacity-50;
+      }
+      .readerLogoutDiv {
+        @apply border p-5 flex justify-center items-center gap-4 rounded-md shadow-lg absolute top-20 right-0 bg-white;
+
+        .logout {
+          @apply text-red-600 text-[30px] hover:opacity-50 cursor-pointer;
+        }
+      }
+    }
+  }
+}

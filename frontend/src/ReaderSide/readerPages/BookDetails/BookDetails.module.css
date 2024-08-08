@@ -1,0 +1,38 @@
+.bookDetailsContainer {
+  @apply  flex flex-col justify-center items-center;
+
+  .feedback{
+    @apply bg-btn text-white px-3 py-4 font-bold text-[18px] rounded-lg mb-10 lg:absolute lg:right-10 lg:top-28
+  }
+
+  .formContainer{
+    @apply border bg-slate-200 p-5 w-full lg:w-[400px] rounded-b-3xl rounded-l-3xl shadow-md absolute right-0 top-48;
+
+    .submitBtn{
+        @apply bg-btn text-white px-3 py-4 w-full my-5 hover:opacity-45 cursor-pointer
+    }
+    .spinner {
+      @apply bg-btn p-5 text-white flex justify-center items-center text-[20px];
+    }
+    
+    .rating{
+        @apply flex items-center gap-6 justify-center mt-6 text-[18px];
+        
+        .reaction{
+            @apply text-[30px]
+        }
+    }
+  }
+
+  .formContainer textarea{
+    @apply w-full mt-10 p-5 outline-none text-[18px]
+  }
+
+  .iframe {
+    @apply h-screen ;
+  }
+}
+
+.loader {
+  @apply flex flex-col justify-center items-center mt-48;
+}

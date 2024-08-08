@@ -1,0 +1,32 @@
+
+.container{
+    @apply shadow-md px-5 py-2 text-[20px] mb-10 relative;
+
+    .profileContainer{
+        @apply  flex justify-between items-center ;
+
+        .marketPlace{
+            @apply text-[#6b21a8] font-bold underline
+        }
+
+        .profileImgContainer{
+            @apply  rounded-full border inline-block p-1 bg-slate-100 mr-4 cursor-pointer;
+
+            .profileImg{
+                @apply w-[55px] h-[50px] rounded-full
+            }
+        }
+    }
+    
+    .logout{
+        @apply border flex justify-center items-center gap-5 text-[20px] p-6 absolute right-12 top-20 bg-white shadow-lg rounded-b-3xl rounded-l-3xl z-10; 
+
+        .logoutContainer{
+            @apply cursor-pointer hover:opacity-45;
+
+            .logoutIcon{
+                @apply text-red-600 font-bold text-[30px]
+            }
+        }
+    }
+}
