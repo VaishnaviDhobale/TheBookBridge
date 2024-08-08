@@ -1,8 +1,8 @@
 .bookDetailsContainer {
-  @apply  flex flex-col justify-center items-center;
+  @apply  flex flex-col justify-center items-center text-base;
 
   .feedback{
-    @apply bg-btn text-white px-3 py-4 font-bold text-[18px] rounded-lg mb-10 lg:absolute lg:right-10 lg:top-28
+    @apply bg-btn text-white px-3 py-4 font-bold rounded-lg mb-10 lg:absolute lg:right-10 lg:top-28
   }
 
   .formContainer{
@@ -16,16 +16,16 @@
     }
     
     .rating{
-        @apply flex items-center gap-6 justify-center mt-6 text-[18px];
+        @apply flex items-center gap-6 justify-center mt-6;
         
         .reaction{
-            @apply text-[30px]
+            @apply text-[26px]
         }
     }
   }
 
   .formContainer textarea{
-    @apply w-full mt-10 p-5 outline-none text-[18px]
+    @apply w-full mt-10 p-5 outline-none;
   }
 
   .iframe {

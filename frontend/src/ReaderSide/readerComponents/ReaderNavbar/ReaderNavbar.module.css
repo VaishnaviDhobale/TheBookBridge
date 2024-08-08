@@ -1,6 +1,6 @@
 
 .container{
-    @apply shadow-md px-5 py-2 text-[20px] mb-10 relative;
+    @apply shadow-md px-5 py-2 text-base mb-10 relative;
 
     .profileContainer{
         @apply  flex justify-between items-center ;

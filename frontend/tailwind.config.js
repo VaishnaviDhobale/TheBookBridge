@@ -14,7 +14,9 @@ export default {
         sans: ["Mulish", "sans-serif"],
       },
     },
+    fontSize: {
+      base: '13px', // Add this line to set the base font size
+    },
   },
   plugins: [],
 }
-

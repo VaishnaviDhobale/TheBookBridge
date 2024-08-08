@@ -98,7 +98,7 @@ export const BookDetails = () => {
         )}
         <iframe
           src={BookPdfExample}
-          frameborder="0"
+          // frameborder="0"
           width="60%"
           // height="600px"
           className={styles.iframe}

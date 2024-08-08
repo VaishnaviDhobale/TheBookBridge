@@ -1,5 +1,5 @@
 .container {
-  @apply lg:grid lg:grid-cols-5 gap-10;
+  @apply lg:grid lg:grid-cols-5 gap-10 text-base;
 
   .searchContainer {
     @apply max-h-screen col-span-1 p-5 shadow-md border overflow-y-auto;
@@ -8,7 +8,7 @@
       @apply flex justify-end mt-5 mb-10;
 
       .addBookBtn {
-        @apply bg-btn w-full text-center text-white px-3 py-3 text-[17px] rounded-md hover:opacity-50 flex justify-center;
+        @apply bg-btn w-full text-center text-white px-3 py-3 rounded-md hover:opacity-50 flex justify-center;
       }
       
      
@@ -19,10 +19,10 @@
     }
 
     .searchDiv input {
-      @apply px-3 py-2 border outline-none text-[18px] rounded-md mb-10 w-full;
+      @apply px-3 py-2 border outline-none  rounded-md mb-10 w-full;
     }
     .selectBookByStatus select {
-      @apply px-3 py-2 border outline-none text-[18px] rounded-md mb-5 w-full;
+      @apply px-3 py-2 border outline-none rounded-md mb-5 w-full;
     }
     .sortByDate{
       @apply mt-5;
@@ -53,7 +53,7 @@
     @apply col-span-4 p-5 shadow-md border;
 
     .books {
-      @apply lg:grid lg:grid-cols-2 gap-10 max-h-screen overflow-y-auto;
+      @apply lg:grid lg:grid-cols-2 gap-5 max-h-screen overflow-y-auto;
 
       .book {
         @apply border mb-7 lg:grid lg:grid-cols-5 gap-5 rounded-l-2xl rounded-r-2xl shadow-lg scale-95 hover:shadow-2xl;
@@ -90,15 +90,15 @@
           }
 
           .isPublishContainer {
-            @apply flex gap-2 text-[18px];
+            @apply flex gap-2;
           }
 
           .title {
-            @apply text-[22px] font-bold mt-5;
+            @apply text-[20px] font-bold mt-5;
           }
 
           .price {
-            @apply text-green-600 font-bold mt-2 text-[20px];
+            @apply text-green-600 font-bold mt-2 text-[18px];
           }
 
           .description {
@@ -106,7 +106,7 @@
           }
 
           .genre {
-            @apply text-[#ea580c] text-[18px] font-bold mt-3;
+            @apply text-[#ea580c] text-[16px] font-bold mt-3;
           }
 
           .tags {
@@ -114,7 +114,7 @@
           }
 
           .readBtn {
-            @apply w-full mb-5 bg-green-700 text-white px-4 py-2 rounded-md text-[17px] mt-4 hover:opacity-50;
+            @apply w-full mb-5 bg-green-700 text-white px-4 py-2 rounded-md mt-4 hover:opacity-50;
           }
 
           .author {
@@ -150,7 +150,7 @@
       }
 
       .updateForm input {
-        @apply w-full mb-5 px-3 py-4 text-[18px] outline-none border;
+        @apply w-full mb-5 px-3 py-4 outline-none border;
       }
     }
 
@@ -177,13 +177,13 @@
       }
 
       .addForm input {
-        @apply w-full mb-5 px-3 py-4 text-[18px] outline-none border;
+        @apply w-full mb-5 px-3 py-4 outline-none border;
       }
     }
   }
 
   .label {
-    @apply font-bold text-[15px];
+    @apply font-bold text-[13px];
   }
 }
 .loader {
@@ -193,7 +193,7 @@
   @apply border w-[50%] shadow-lg m-auto p-5 flex flex-col items-center;
 
   .addBookBtn {
-    @apply bg-btn text-center my-8 text-white px-3 py-3 text-[17px] rounded-md hover:opacity-50 flex justify-center;
+    @apply bg-btn text-center my-8 text-white px-3 py-3 rounded-md hover:opacity-50 flex justify-center;
   }
   .heading{
     @apply font-bold text-[18px]
@@ -221,7 +221,7 @@
     }
 
     .addForm input {
-      @apply w-full mb-5 px-3 py-4 text-[18px] outline-none border;
+      @apply w-full mb-5 px-3 py-4 outline-none border;
     }
   }
 }

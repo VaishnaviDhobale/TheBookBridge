@@ -1,5 +1,5 @@
 .container {
-    @apply shadow-md px-5 py-2 text-[20px] mb-32 lg:mb-10 sticky top-0 bg-white z-50; /* Added z-50 for better stacking context */
+    @apply shadow-md px-5 py-2 text-base mb-32 lg:mb-10 sticky top-0 bg-white z-50; /* Added z-50 for better stacking context */
   
     .profileContainer {
       @apply flex justify-between items-center;

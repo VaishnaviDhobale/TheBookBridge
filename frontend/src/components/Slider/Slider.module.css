@@ -1,9 +1,9 @@
 
 .container{
-    @apply border p-5 shadow-md mt-1;
+    @apply border p-5 shadow-md mt-1 text-base;
 
     .value{
-        @apply text-[20px] bg-slate-200 w-[60px] m-auto text-center mb-5 rounded-lg
+        @apply bg-slate-200 w-[60px] m-auto text-center mb-5 rounded-lg
     }
 
     .sliderContainer{

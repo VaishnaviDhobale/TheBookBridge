@@ -107,7 +107,7 @@ export const AuthorLogin = () => {
             </div>
           )}
           <p className={styles.dontHaveAccount}>
-            Don't have account?{" "}
+            Dont have account?{" "}
             <NavLink to="/authorSignup">
               <span>Click Here</span>
             </NavLink>
