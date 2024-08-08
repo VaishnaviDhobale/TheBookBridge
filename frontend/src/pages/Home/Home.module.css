@@ -58,7 +58,7 @@
         @apply lg:grid lg:grid-cols-2 gap-5;
 
         .book {
-          @apply border mb-7 lg:grid lg:grid-cols-5 gap-5 rounded-l-2xl rounded-r-2xl shadow-lg scale-95 hover:shadow-2xl;
+          @apply border mb-7 lg:grid lg:grid-cols-5 gap-4 rounded-l-2xl rounded-r-2xl shadow-lg scale-95 hover:shadow-2xl;
 
           .imgDiv {
             @apply p-0 col-span-2;
