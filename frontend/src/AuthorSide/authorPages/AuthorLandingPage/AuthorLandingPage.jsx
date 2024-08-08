@@ -609,13 +609,13 @@ export const AuthorLandingPage = () => {
                   <input
                     type="text"
                     name="status"
-                    placeholder="status"
+                    placeholder="status   draft/published"
                     onChange={handleInput}
                   />
                   <input
                     type="text"
                     name="isPaid"
-                    placeholder="isPaid"
+                    placeholder="isPaid   true/false"
                     onChange={handleInput}
                   />
                   <label htmlFor="cover">Cover Image</label>
@@ -650,7 +650,7 @@ export const AuthorLandingPage = () => {
       ) : (
         <div className={styles.noBook}>
           <h1 className={styles.heading}>
-            It looks like you haven't added any books yet. Please proceed to add
+            It looks like you havent added any books yet. Please proceed to add
             one.
           </h1>
           <button className={styles.addBookBtn} onClick={()=>{setShowAddForm(!showAddForm)}}>Add Book</button>
